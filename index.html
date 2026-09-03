@@ -100,7 +100,13 @@
                 <a href="#ecosystem" class="hover:text-emerald-400 transition-colors">생태계 & 리스크</a>
                 <a href="#impact" class="hover:text-emerald-400 transition-colors">기대효과</a>
             </nav>
-            <div class="text-xs text-slate-400">2026.09.03 | 대외비</div>
+            <div class="flex items-center gap-3">
+                <div class="hidden lg:block text-xs text-slate-400">2026.09.03 | 대외비</div>
+                <a href="https://kfcc011-creator.github.io/MG0903/cal" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-1.5 px-3 rounded-md shadow-sm transition-colors flex items-center gap-1.5 border border-emerald-500/50">
+                    <span class="text-sm">🧮</span>
+                    <span>금융계산기</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -352,48 +358,63 @@
             </div>
 
             <!-- HTML/CSS Flowchart (NO SVG / NO MERMAID) -->
-            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                <h3 class="text-center font-bold text-slate-900 text-sm mb-6">지역 상생 포용금융 선순환 프로세스</h3>
+            <div class="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-200 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gradient-to-br from-emerald-100 to-transparent rounded-full opacity-50 blur-xl"></div>
+                <h3 class="text-center font-extrabold text-slate-800 text-sm md:text-base mb-8 relative z-10 flex items-center justify-center gap-2">
+                    <span class="text-emerald-500 text-lg">🔄</span> 지역 상생 포용금융 선순환 프로세스
+                </h3>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center relative">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-3 lg:gap-6 relative z-10 w-full">
                     <!-- Step 1 -->
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 space-y-2">
-                        <div class="w-8 h-8 bg-blue-100 text-blue-700 font-extrabold rounded-full flex items-center justify-center mx-auto text-xs">1</div>
-                        <h4 class="font-bold text-slate-900 text-sm">지자체 & 신용보증재단</h4>
-                        <div class="text-[11px] text-slate-600 space-y-1">
-                            <p>• 이차보전 지원 (연 2.0~3.0%p)</p>
-                            <p>• 특례보증서 발급 (보증률 90~100%)</p>
-                            <p>• 특별출연 협업 체계 구축</p>
+                    <div class="flex-1 w-full md:w-auto bg-white p-5 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col items-center border-b border-slate-100 pb-3 mb-3">
+                            <div class="w-9 h-9 bg-blue-50 text-blue-600 font-extrabold rounded-full flex items-center justify-center mb-2 shadow-inner border border-blue-100 text-sm">1</div>
+                            <h4 class="font-bold text-slate-900 text-sm">지자체 & 신용보증재단</h4>
                         </div>
+                        <ul class="text-[11px] lg:text-xs text-slate-600 space-y-2 text-left">
+                            <li class="flex items-start gap-1.5"><span class="text-blue-400 mt-0.5 font-bold">•</span> <span>이차보전 지원 (연 2.0~3.0%p)</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-blue-400 mt-0.5 font-bold">•</span> <span>특례보증서 발급 (보증률 90~100%)</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-blue-400 mt-0.5 font-bold">•</span> <span>특별출연 협업 체계 구축</span></li>
+                        </ul>
                     </div>
 
                     <!-- Flow Arrow Mobile/Desktop -->
-                    <div class="hidden md:flex items-center justify-center text-slate-400 font-extrabold text-xl">➔</div>
+                    <div class="flex items-center justify-center text-slate-300">
+                        <div class="md:hidden text-2xl font-bold animate-bounce text-slate-400">↓</div>
+                        <div class="hidden md:block text-2xl lg:text-3xl font-light tracking-tighter">➔</div>
+                    </div>
 
                     <!-- Step 2 -->
-                    <div class="bg-white p-4 rounded-xl shadow-sm border-2 border-emerald-500 space-y-2 relative">
-                        <span class="absolute -top-2 -right-2 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">주관 기관</span>
-                        <div class="w-8 h-8 bg-emerald-100 text-emerald-700 font-extrabold rounded-full flex items-center justify-center mx-auto text-xs">2</div>
-                        <h4 class="font-bold text-slate-900 text-sm">MG 새마을금고</h4>
-                        <div class="text-[11px] text-slate-600 space-y-1">
-                            <p>• 저금리 대출 실행 (최대 5,000만 원)</p>
-                            <p>• 매출정산 계좌 유치 (저원가성 수신)</p>
-                            <p>• MG더뱅킹 앱 혜택 제공</p>
+                    <div class="flex-1 w-full md:w-auto bg-white p-5 rounded-2xl shadow-md border-2 border-emerald-500 relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] font-extrabold px-3 py-1 rounded-full shadow-sm whitespace-nowrap">주관 기관</span>
+                        <div class="flex flex-col items-center border-b border-emerald-50 pb-3 mb-3">
+                            <div class="w-9 h-9 bg-emerald-50 text-emerald-600 font-extrabold rounded-full flex items-center justify-center mb-2 shadow-inner border border-emerald-100 text-sm">2</div>
+                            <h4 class="font-bold text-slate-900 text-sm">MG 새마을금고</h4>
                         </div>
+                        <ul class="text-[11px] lg:text-xs text-slate-600 space-y-2 text-left">
+                            <li class="flex items-start gap-1.5"><span class="text-emerald-500 mt-0.5 font-bold">•</span> <span>저금리 대출 실행 (최대 5,000만 원)</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-emerald-500 mt-0.5 font-bold">•</span> <span>매출정산 계좌 유치 (저원가성 수신)</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-emerald-500 mt-0.5 font-bold">•</span> <span>MG더뱅킹 앱 혜택 제공</span></li>
+                        </ul>
                     </div>
 
                     <!-- Flow Arrow Mobile/Desktop -->
-                    <div class="hidden md:flex items-center justify-center text-slate-400 font-extrabold text-xl">➔</div>
+                    <div class="flex items-center justify-center text-slate-300">
+                        <div class="md:hidden text-2xl font-bold animate-bounce text-slate-400">↓</div>
+                        <div class="hidden md:block text-2xl lg:text-3xl font-light tracking-tighter">➔</div>
+                    </div>
 
                     <!-- Step 3 -->
-                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 space-y-2">
-                        <div class="w-8 h-8 bg-amber-100 text-amber-700 font-extrabold rounded-full flex items-center justify-center mx-auto text-xs">3</div>
-                        <h4 class="font-bold text-slate-900 text-sm">지역 소상공인</h4>
-                        <div class="text-[11px] text-slate-600 space-y-1">
-                            <p>• 금융비용 부담 대폭 경감 (2~3%대)</p>
-                            <p>• 경영 지원 리포트 활용</p>
-                            <p>• 지역 상권 재기 및 소비 촉진</p>
+                    <div class="flex-1 w-full md:w-auto bg-white p-5 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex flex-col items-center border-b border-slate-100 pb-3 mb-3">
+                            <div class="w-9 h-9 bg-amber-50 text-amber-600 font-extrabold rounded-full flex items-center justify-center mb-2 shadow-inner border border-amber-100 text-sm">3</div>
+                            <h4 class="font-bold text-slate-900 text-sm">지역 소상공인</h4>
                         </div>
+                        <ul class="text-[11px] lg:text-xs text-slate-600 space-y-2 text-left">
+                            <li class="flex items-start gap-1.5"><span class="text-amber-500 mt-0.5 font-bold">•</span> <span>금융비용 부담 대폭 경감 (2~3%대)</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-amber-500 mt-0.5 font-bold">•</span> <span>경영 지원 리포트 활용</span></li>
+                            <li class="flex items-start gap-1.5"><span class="text-amber-500 mt-0.5 font-bold">•</span> <span>지역 상권 재기 및 소비 촉진</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
